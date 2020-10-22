@@ -60,3 +60,60 @@ System.out.println(myVar); // outputs "15" in the console
 
 > This name can be used instead of a literal or an explicitly typed value.
 
+#### Conclusion
+
+A variable is a component in programming languages that allows a programmer to refrence data that was previously stored. Later, we will explore how a variable can be used to implement more complex ideas.
+
+```java
+// Declaration
+
+// Data type / Name = Value
+float myFloat = 0.3;
+
+// Data type / Name
+int myInt;
+
+// Assignment
+myFloat = 0.6;
+myInt = 3;
+
+// Reading
+System.out.println(myInt);
+```
+
+### Data Types
+
+Each variable has a explict or implied data type. In Java, a statistically typed language, each variable must be explicity given a data type during declaration, regardless if a value is provided.
+
+```java
+// int is the data type of myInt
+int myInt;
+
+```
+
+> After introducing the concept of classes, we will define data types differently. In Python, a dynamic language, the data type is implied from the value and the value's type can change during runtime.
+
+#### Primitive Data Types
+
+There are 5 
+
+**Integer**
+
+An integer is a whole number that can be positive or negative (zero is also an integer).
+
+```java
+1 -15 3002
+```
+
+**Float**
+
+A float is a number that contains decimal places.
+
+```java
+1.32 -35.351 234234.00002
+```
+
+**Character**
+
+
+

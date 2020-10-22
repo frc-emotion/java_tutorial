@@ -3,7 +3,7 @@
 ## Helpful Links
 W3school [variables](https://www.w3schools.com/java/java_variables.asp) and [datatypes](https://www.w3schools.com/java/java_data_types.asp)
 
-###Variables
+### Variables
 
 **What is a Variable?**
 

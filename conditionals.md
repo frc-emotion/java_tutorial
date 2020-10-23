@@ -84,7 +84,7 @@ if (Robot.driverController.getBButton()) {
 
 Another way to generate a boolean is to use the result of a >, < or = operator (there is also >= and <=).
 
-```;ava
+```java
 boolean myBool = 3>2;   // True
 myBool = 3==2;          // False
 ```

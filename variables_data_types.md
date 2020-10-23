@@ -95,7 +95,9 @@ int myInt;
 
 #### Primitive Data Types
 
-There are 5 
+There are four primitive data types: integer, float, character, and boolean. These data types are implemented natively in the language and are expanded upon by higher data types.
+
+> There are sub categories within integer and float that are exponsed in certain languages that allows the programmer to explicitly control the bit size of the variable.
 
 **Integer**
 
@@ -115,5 +117,76 @@ A float is a number that contains decimal places.
 
 **Character**
 
+A character in Java is a unicode character enclosed by single quotes (').
+
+```java
+'b' '\b' '"'
+```
+
+> Another popular method of storing characters is ASCII
+
+**Boolean**
+
+A boolean stores a true or false statement. This data type is primarily used to store the output of conditionals.
+
+```java
+true false
+```
+#### Implementation in Java
+
+Compared to class defined data types, primitive data types in Java are lowercased.
+
+```java
+int myInt;
+float myFloat;
+char myChar;
+boolean myBool;
+```
+
+#### What about String?
+
+The first clue on the classification of String is its capitalization. Later on, we will explore the true meaning behind a capitalized data type. But for now, we will view all data types that are capitalized as not primitive.
+
+**Why is String not Considered a Primitive?**
+
+A String is not considered a primitive as it is a collection of characters, a primitive data type. This separation between primitive and non primitive will be important when defining later concepts.
+
+```java
+String myString;
+```
+
+#### Conclusion
+
+A data type defines what a variable can store. In Java, the data type of a variable **cannot** change during runtime, when the program is executed, such that a different data type can be placed in a data type specified for something else.
+
+```java
+// This does not work
+String myString = "hello_world";
+myString = 3;
+```
+In Java, there are four primitive data types: integer, float, character, and boolean. These data types are implemented by the language and are lowercased to be differentiated from non primitive data types.
+
+## Optional
 
 
+### Static vs Dynamic Languages
+As I mentioned before, Java data types are static, such that they cannot change during runtime. Therefore, we call Java a statistically typed language. Another type of language exists called dynamically typed languages that allows variables to change their type during runtime. For example, Python allows you to set a variable originally holding an integer to now having the value of a string.
+
+```python
+# This does not work in Java
+myInt = 10
+myInt = "hello_world"
+```
+
+This ability to change data types during runtime can lead to type errors where a variable's data type might not match the expected result. For example, a variable previously set to an integer that was changed to a string cannot be used in arithmetic.
+
+```python
+# Do not worry about this function. This is just an example of a case where you expect an integer input.
+def add_one(addend):
+  return addend + 1
+
+myInt = "hello_world"
+print(add_one(myInt)) # Will raise a TypeError when trying to add a string to an Int
+```
+
+We will not discuss the benefits and negatives of this design choice in this article as the scenarios extend beyond the scope of our lesson. However, with enough intrest, I may create an article on Dynamic vs Static languages later.

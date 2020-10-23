@@ -24,7 +24,7 @@ if (myBool) {
 
 #### Else
 
-An else statement will execute when the linked If statmment does not execute (this also includes elif statements).
+An else statement will execute when the linked If statmment does not execute (this also includes elif statements). There can only be one else statement in each chain.
 
 ```java
 boolean myBool = false;
@@ -39,7 +39,7 @@ if (myBool) {
 ```
 #### Elif
 
-An elif or else if statement executes if the previous if statement did not execute. This stament will preced the else statement but come after an if or another elif statement.
+An elif or else if statement executes if the previous if statement did not execute and the conditional is true. This stament will preced the else statement but come after an if or another elif statement.
 
 ```java
 boolean myBool = false;

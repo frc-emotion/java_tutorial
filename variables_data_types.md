@@ -123,7 +123,7 @@ A character in Java is a unicode character enclosed by single quotes (').
 'b' '\b' '"'
 ```
 
-> Another popular method of storing characters is ASCII
+> ASCII is another system for storing characters
 
 **Boolean**
 

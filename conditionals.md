@@ -8,6 +8,17 @@ W3School [conditionals](https://www.w3schools.com/java/java_conditions.asp) and 
 
 A conditional is statement that will execute depending on the conditions. In programming, conditionals only deal with absolutes: true and false. Therefore, conditionals are linked with the primitive data type that deals with state: booleans.
 
+```java
+/* Format
+/ if/elif (conditional) {
+/   code block executed
+/}
+
+if (true) {
+  System.out.Println("true");
+}
+```
+
 #### If
 
 An if statement will execute with the given condition is true.
@@ -82,14 +93,32 @@ if (Robot.driverController.getBButton()) {
 ```
 ### Mathematic Conditionals
 
-Another way to generate a boolean is to use the result of a >, < or = operator (there is also >= and <=).
+Another way to generate a boolean is to use the result of a comparison operator (>, <, <=, >=, and ==) .
 
 ```java
 boolean myBool = 3>2;   // True
 myBool = 3==2;          // False
 ```
 
-> When comparing if two values equals, use == as a = represents setting a value.
+> When comparing if two values equals, use == as a = is used to set a value to a variable.
 
 > Do not use == to compare if strings equal in Java. There is a .equals function in the String class that should be used instead.
+
+### Functional Conditionals
+
+In a later article, we will cover functions which can returns data that can be stored in a variable or used immediately. However, we will cover a situation where a function returns a boolean which can be directly used in place of a boolean variable.
+
+```java
+String myString = "same string";
+if (myString.equals("same string") {
+  System.out.println("the string is the same as myString");
+}
+```
+
+> a String object has a function called .equals(String) which returns a boolean depending on whether the passed string is the same.
+
+### Switch Statment
+
+A switch statement is provided in Java and other languages to simplify a common use of if/elif chains where you compare an input to different values. In a switch statement, the 
+
 
